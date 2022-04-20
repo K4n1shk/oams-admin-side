@@ -6,35 +6,11 @@ const sidebarNav = [
         text: 'Home'
     },
     {
-        link: '/orders',
-        section: 'orders',
-        icon: <i className='bx bx-receipt' ></i>,
-        text: 'Orders'
-    },
-    {
-        link: '/products',
-        section: 'products',
-        icon: <i className='bx bx-cube'></i>,
-        text: 'Products'
-    },
-    {
-        link: '/customers',
-        section: 'customers',
+        link: '/candidates',
+        section: 'candidates',
         icon: <i className='bx bx-user'></i>,
-        text: 'Customers'
+        text: 'Candidates'
     },
-    {
-        link: '/stats',
-        section: 'stats',
-        icon: <i className='bx bx-line-chart'></i>,
-        text: 'Stats'
-    },
-    {
-        link: '/settings',
-        section: 'settings',
-        icon: <i className='bx bx-cog'></i>,
-        text: 'Settings'
-    }
 ]
 
 export default sidebarNav

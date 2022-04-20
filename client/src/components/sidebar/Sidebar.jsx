@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './sidebar.scss'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { images } from '../../constants'
 import sidebarNav from '../../configs/sidebarNav'
 
@@ -22,8 +22,10 @@ const Sidebar = () => {
             document.querySelector('.main__content').style = ''
         }, 500);
     }
+    const navigate = useNavigate();
     const handleLogout = () => {
         localStorage.removeItem("token");
+        navigate("./login");
         window.location.reload();
     };
 
