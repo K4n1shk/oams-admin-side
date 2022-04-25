@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { userColumns } from "../datatablesource";
 import "./datatable.scss"
 import { NavLink } from "react-router-dom";
@@ -56,6 +56,7 @@ const Blank = () => {
                 pageSize={9}
                 rowsPerPageOptions={[9]}
                 checkboxSelection
+                components={{ Toolbar: GridToolbar }}
             />
         </div>
     );

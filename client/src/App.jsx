@@ -5,8 +5,10 @@ import Signup from "./components/Singup";
 import Login from "./components/Login";
 import Blank from './pages/Blank'
 import Dashboard from './pages/Dashboard'
+import Personal from './pages/Personal'
 import MainLayout from './layout/MainLayout'
 import User from './components/User';
+import Institute from './pages/Institute';
 
 function App() {
 	const user = localStorage.getItem("token");
@@ -16,6 +18,8 @@ function App() {
 			{user && <Route path="/" element={<MainLayout />}>
 				<Route index element={<Dashboard />} />
 				<Route path="candidates" element={<Blank />} />
+				<Route path="personal" element={<Personal />} />
+				<Route path="institute" element={<Institute />} />
 				<Route path="candidates/:id" element={<User />} />
 			</Route>}
 			<Route path="/signup" exact element={<Signup />} />

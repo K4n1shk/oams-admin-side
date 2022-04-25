@@ -11,6 +11,18 @@ const sidebarNav = [
         icon: <i className='bx bx-user'></i>,
         text: 'Candidates'
     },
+    {
+        link: '/personal',
+        section: 'personal',
+        icon: <i className='bx bx-user'></i>,
+        text: 'Personal Information'
+    },
+    {
+        link: '/institute',
+        section: 'Institute',
+        icon: <i className="bx bxs-school"></i>,
+        text: 'Institute Information'
+    }
 ]
 
 export default sidebarNav

@@ -20,6 +20,11 @@ export const userColumns = [
     headerName: "Email",
     width: 230,
   },
+  {
+    field: "gender",
+    headerName: "Gender",
+    width: 130,
+  },
 
   {
     field: "date",
@@ -51,86 +56,104 @@ export const userColumns = [
   },
 ];
 
-//temporary data
-export const userRows = [
+
+export const userColumnsP = [
   {
-    id: 1,
-    username: "Snow",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    status: "active",
-    email: "1snow@gmail.com",
-    age: 35,
+    field: "firstName",
+    headerName: "User",
+    width: 230,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
+          {params.row.firstName}
+          {" "}
+          {params.row.lastName}
+        </div>
+      );
+    },
   },
   {
-    id: 2,
-    username: "Jamie Lannister",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "2snow@gmail.com",
-    status: "passive",
-    age: 42,
+    field: "email",
+    headerName: "Email",
+    width: 230,
   },
   {
-    id: 3,
-    username: "Lannister",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "3snow@gmail.com",
-    status: "pending",
-    age: 45,
+    field: "gender",
+    headerName: "Gender",
+    width: 130,
   },
   {
-    id: 4,
-    username: "Stark",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "4snow@gmail.com",
-    status: "active",
-    age: 16,
+    field: "DOB",
+    headerName: "Date of Birth",
+    width: 130,
   },
   {
-    id: 5,
-    username: "Targaryen",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "5snow@gmail.com",
-    status: "passive",
-    age: 22,
+    field: "category",
+    headerName: "Category",
+    width: 130,
   },
   {
-    id: 6,
-    username: "Melisandre",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "6snow@gmail.com",
-    status: "active",
-    age: 15,
+    field: "nationality",
+    headerName: "Nationality",
+    width: 130,
   },
   {
-    id: 7,
-    username: "Clifford",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "7snow@gmail.com",
-    status: "passive",
-    age: 44,
+    field: "contact",
+    headerName: "Personal Contact",
+    width: 130,
+  },
+
+
+]
+
+
+export const userColumnsI = [
+  {
+    field: "firstName",
+    headerName: "User",
+    width: 230,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
+          {params.row.firstName}
+          {" "}
+          {params.row.lastName}
+        </div>
+      );
+    },
   },
   {
-    id: 8,
-    username: "Frances",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "8snow@gmail.com",
-    status: "active",
-    age: 36,
+    field: "email",
+    headerName: "Email",
+    width: 230,
   },
   {
-    id: 9,
-    username: "Roxie",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "snow@gmail.com",
-    status: "pending",
-    age: 65,
+    field: "branch",
+    headerName: "Branch Allocated",
+    width: 130,
   },
   {
-    id: 10,
-    username: "Roxie",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "snow@gmail.com",
-    status: "active",
-    age: 65,
+    field: "pwd",
+    headerName: "Person with Disability",
+    width: 130,
   },
-];
+  {
+    field: "allotedinstitute",
+    headerName: "Alloted Institute",
+    width: 130,
+  },
+  {
+    field: "roundNumber",
+    headerName: "Round Number",
+    width: 130,
+  },
+  {
+    field: "CSABstatus",
+    headerName: "CSAB status",
+    width: 130,
+  },
+
+
+]
