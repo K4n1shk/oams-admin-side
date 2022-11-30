@@ -157,3 +157,133 @@ export const userColumnsI = [
 
 
 ]
+
+export const userColumns2 = [
+  {
+    field: "firstName",
+    headerName: "User",
+    width: 230,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
+          {params.row.firstName}
+          {" "}
+          {params.row.lastName}
+        </div>
+      );
+    },
+  },
+  {
+    field: "paymentMode",
+    headerName: "Payment Mode",
+    width: 230,
+  },
+  {
+    field: "transactionId",
+    headerName: "Transaction ID",
+    width: 230,
+  },
+  {
+    field: "bankName",
+    headerName: "Bank Name",
+    width: 230,
+  },
+  {
+    field: "feeAmount",
+    headerName: "Fee Amount",
+    width: 230,
+  },
+  {
+    field: "DOD",
+    headerName: "Date of Deposit",
+    width: 230,
+  },
+  {
+    field: "feeType",
+    headerName: "Fee Type",
+    width: 230,
+  },
+  {
+    field: "scholarshipStatus",
+    headerName: "Scholarship Status",
+    width: 230,
+  },
+  {
+    field: "scholarshipName",
+    headerName: "Scholarship Name",
+    width: 230,
+  },
+  {
+    field: "feeYear",
+    headerName: "Year",
+    width: 230,
+  },
+  {
+    field: "feeSemester",
+    headerName: "Semester",
+    width: 230,
+  },
+]
+export const userColumns3 = [
+  {
+    field: "firstName",
+    headerName: "User",
+    width: 230,
+    renderCell: (params) => {
+      return (
+        <div className="cellWithImg">
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
+          {params.row.firstName}
+          {" "}
+          {params.row.lastName}
+        </div>
+      );
+    },
+  },
+  {
+    field: "preferredHostel",
+    headerName: "Preferred Hostel",
+    width: 230,
+  },
+  {
+    field: "preferredHostelFloor",
+    headerName: "Preferred Hostel Floor",
+    width: 230,
+  },
+  {
+    field: "roomStyle",
+    headerName: "Preferred Room Style",
+    width: 230,
+  },
+  {
+    field: "messFood",
+    headerName: "Prefered Mess Food",
+    width: 230,
+  },
+  {
+    field: "hostelPaymentMode",
+    headerName: "Hostel Fee Payment Mode",
+    width: 230,
+  },
+  {
+    field: "HostelTid",
+    headerName: "Transaction ID",
+    width: 230,
+  },
+  {
+    field: "HBankName",
+    headerName: "Bank Name",
+    width: 230,
+  },
+  {
+    field: "HFeeAmount",
+    headerName: "Fee Amount",
+    width: 230,
+  },
+  {
+    field: "HDOD",
+    headerName: "Date of Deposit",
+    width: 230,
+  },
+]

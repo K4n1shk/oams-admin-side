@@ -9,6 +9,8 @@ import Personal from './pages/Personal'
 import MainLayout from './layout/MainLayout'
 import User from './components/User';
 import Institute from './pages/Institute';
+import Payment from './pages/Payment';
+import Hostel from './pages/Hostel';
 
 function App() {
 	const user = localStorage.getItem("token");
@@ -20,6 +22,8 @@ function App() {
 				<Route path="candidates" element={<Blank />} />
 				<Route path="personal" element={<Personal />} />
 				<Route path="institute" element={<Institute />} />
+				<Route path="payment" element={<Payment />} />
+				<Route path="hostel" element={<Hostel />} />
 				<Route path="candidates/:id" element={<User />} />
 			</Route>}
 			<Route path="/signup" exact element={<Signup />} />

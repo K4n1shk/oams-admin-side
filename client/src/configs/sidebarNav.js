@@ -14,15 +14,28 @@ const sidebarNav = [
     {
         link: '/personal',
         section: 'personal',
-        icon: <i className='bx bx-user'></i>,
+        icon: <i className='bx bx-body'></i>,
         text: 'Personal Information'
     },
     {
         link: '/institute',
-        section: 'Institute',
+        section: 'institute',
         icon: <i className="bx bxs-school"></i>,
         text: 'Institute Information'
-    }
+    },
+    {
+        link: '/payment',
+        section: 'payment',
+        icon: <i className='bx bx-receipt'></i>,
+        text: 'Payment Information'
+    },
+    {
+        link: '/hostel',
+        section: 'hostel',
+        icon: <i className='bx bx-building-house'></i>,
+        text: 'Hostel Information'
+    },
+
 ]
 
 export default sidebarNav

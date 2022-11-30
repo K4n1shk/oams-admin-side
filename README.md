@@ -1,1 +1,0 @@
-# oams-admin
